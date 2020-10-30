@@ -9302,6 +9302,7 @@ const MathHelper = require('./MathHelper');
 class SvgDrawer {
   constructor(options) {
     this.preprocessor = new Drawer(options);
+    this.opts = this.preprocessor.opts;
   }
   /**
    * Draws the parsed smiles data to an svg element.
