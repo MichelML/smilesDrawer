@@ -16,7 +16,7 @@ var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.do
  */
 
 var SmilesDrawer = {
-  Version: '1.0.0'
+  Version: '1.3.0'
 };
 SmilesDrawer.Drawer = Drawer;
 SmilesDrawer.Parser = Parser;
@@ -9297,6 +9297,8 @@ const ThemeManager = require('./ThemeManager');
 
 const Vector2 = require('./Vector2');
 
+const MathHelper = require('./MathHelper');
+
 class SvgDrawer {
   constructor(options) {
     this.preprocessor = new Drawer(options);
@@ -9608,7 +9610,7 @@ class SvgDrawer {
 
 module.exports = SvgDrawer;
 
-},{"./ArrayHelper":2,"./Atom":3,"./Drawer":5,"./Graph":7,"./Line":8,"./SvgWrapper":15,"./ThemeManager":16,"./Vector2":18}],15:[function(require,module,exports){
+},{"./ArrayHelper":2,"./Atom":3,"./Drawer":5,"./Graph":7,"./Line":8,"./MathHelper":9,"./SvgWrapper":15,"./ThemeManager":16,"./Vector2":18}],15:[function(require,module,exports){
 "use strict";
 
 const {
